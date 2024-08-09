@@ -9,10 +9,10 @@ import (
 )
 
 type Item struct {
-    ID   int    `json:"id"`
-    Field1 string `json:"name,omitempty"`
-    Field2 string `json:"data,omitempty"`
-	Field3 string `json:"data_create,omitempty"`
+    ID   int    
+    Field1 string 
+    Field2 string 
+    Field3 string 
 }
 
 func Add(name, date string) {
