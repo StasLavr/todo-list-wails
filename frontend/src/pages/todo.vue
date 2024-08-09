@@ -45,9 +45,8 @@ export default {
 
 <template>
   <navbar/>
-  <div class="bg-neutral-800 w-screen h-screen flex justify-center items-center">
-    <!-- component -->
-<div class="h-80 w-full flex items-center justify-center bg-teal-lightest font-sans">
+<div class="bg-neutral-800 w-screen min-h-screen flex justify-center items-center">
+   <div class="min-h-80 w-full flex items-center justify-center bg-teal-lightest font-sans">
 	<div class="bg-white rounded shadow p-6 m-4 w-full lg:max-w-6xl lg:max-w-lg">
         <div class="mb-4">
             <h1 class="text-grey-darkest">Todo List</h1>
@@ -61,8 +60,8 @@ export default {
             <task v-for="west in this.info" :task="west" @test="update()"></task>
         </div>
     </div>
+    </div>
 </div>
-  </div>
 </template>
 
 <style>

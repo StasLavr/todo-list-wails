@@ -1,6 +1,6 @@
 <template lang="">
-   <div class="flex mb-4 items-center">
-                <p class="w-full line-through text-green">Задача: {{task.id}} {{task.name}} Дата: {{task.data}} Время создания: {{task.data_create}}</p>
+   <div class="flex mb-4 items-center bg-green-200 p-4 rounded-2xl">
+                <p class="w-full line-through text-green">Задача: {{task.name}} Дата: {{task.data}} Время создания: {{task.data_create}}</p>
                 <button @click="done_off()" class="flex-no-shrink p-2 ml-4 mr-2 border-2 rounded bg-slate-400 hover:text-white  rounded-lg text-grey border-grey hover:bg-grey">Не выполнено</button>
                 <button @click="del()" class="flex-no-shrink p-2 ml-2 border-2 rounded bg-red-500 text-red border-red rounded-lg hover:text-white hover:bg-red">Удалить</button>
    </div>
